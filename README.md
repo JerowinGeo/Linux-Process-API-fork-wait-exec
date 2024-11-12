@@ -10,7 +10,6 @@ To write C Program that uses Linux Process API - fork(), wait(), exec()
 # DESIGN STEPS:
 
 ### Step 1:
-```
 Navigate to any Linux environment installed on the system or installed inside a virtual environment like virtual box/vmware or online linux JSLinux (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) or docker.
 
 ### Step 2:
@@ -24,7 +23,7 @@ Test the C Program for the desired output.
 # PROGRAM:
 
 ## C Program to print process ID and parent Process ID using Linux API system calls
-
+```
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -43,11 +42,9 @@ int main(void)
 	printf("The process id: %d\n",process_id);
 	printf("The process id of parent function: %d\n",p_process_id);
 	return 0; }
-
-
 ```
 
-##OUTPUT
+## OUTPUT
 
 
 ![Screenshot 2024-09-10 164803](https://github.com/user-attachments/assets/76ae18de-5b9f-4a8d-9104-693bc0eb051b)
@@ -72,7 +69,7 @@ sleep(100);
 exit(0);} 
 }
 ```
-##OUTPUT
+## OUTPUT
 
 
 ![Screenshot 2024-09-10 165008](https://github.com/user-attachments/assets/b68accf6-e38d-4255-a7c8-542cac1f43dc)
@@ -108,7 +105,7 @@ printf("Running ps with execlp. Now with path specified\n");
 
 ```
 
-##OUTPUT
+## OUTPUT
 
 ![Screenshot 2024-09-10 165141](https://github.com/user-attachments/assets/f292c1f5-22fa-40a7-ae44-26731f9df8ed)
 
